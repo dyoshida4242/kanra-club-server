@@ -1,4 +1,4 @@
-FROM ruby:3.0.0-alpine
+FROM ruby:2.7.2-alpine
 
 # 文字コードの設定
 ENV LANG=C.UTF-8 \
