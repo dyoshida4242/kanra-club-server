@@ -17,9 +17,12 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'pry'
   gem 'pry-byebug'
-  gem 'pry-doc', '~> 1.1'
+  gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
+  gem 'faker'
+  gem 'seed-fu'
+  gem 'bullet'
 end
 
 group :development do
@@ -32,6 +35,12 @@ group :development do
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
   gem 'annotate'  
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'rspec_junit_formatter'
+  gem 'rails-controller-testing'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
